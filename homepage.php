@@ -37,13 +37,13 @@
             </nav>
         </header>
         <section class="center">
-            <br/>
-            <h1>About</h1>
-            <br/>
-            <p>Mogle is a suite of tools designed to help gig economy workers manage and optimize
-            their multiple sources of income.</p>
             <div class="card">
-                <h3>Step 1: <a href="questionnaire.php">Questionnaire</a> or <a href="search.php">Search</a></h3>
+                <h1>About</h1>
+                <p>Mogle is a suite of tools designed to help gig economy workers manage and optimize
+                their multiple sources of income.</p>
+            </div>
+            <div class="card">
+                <h3>Step 1: <a href="questionnaire.php">Questionnaire</a> / <a href="search.php">Search</a></h3>
                 <p>Find out different ways you can make money by inputting your specific and unique set
                 of skills. Mogle will match you to some of the 150+ gig economy platforms out there, ranging
                 from Zeel for massage therapists to Fiverr for music teachers.</p>

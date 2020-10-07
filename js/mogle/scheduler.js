@@ -15,8 +15,7 @@ function clear() {
 function getEstimate(platform, start_date, end_date, action) {
     axios({
         method: "POST",
-        baseURL: "http://localhost:5000",
-        url: "/get_estimate",
+        baseURL: "/mogle/AJAX/HTTP/scheduler.php",
         data: {
             location: $("#location").val(),
             platform: platform,

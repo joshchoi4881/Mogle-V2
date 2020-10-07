@@ -68,8 +68,10 @@
             </nav>
         </header>
         <section class="center">
-            <h1>Search</h1>
-            <p>Join our <a href="waitlist.php">waitlist</a> to receive weekly research on new freelancing opportunities and other gig-related news</p>
+            <div class="card">
+                <h1>Search</h1>
+                <p>Join our <a href="waitlist.php">waitlist</a> to receive weekly research on new freelancing opportunities and other gig-related news.</p>
+            </div>
             <div id="categories">
                 <div id="rideshareCategory" class="category">
                     <h1>Rideshare</h1>

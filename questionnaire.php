@@ -40,9 +40,7 @@
             <div id="questionnaire">
                 <div class="card">
                     <h1>Questionnaire</h1>
-                    <h1>Waitlist</h1>
-                    <p>Join our <a href="waitlist.php">waitlist</a> to receive weekly research on new freelancing opportunities and other gig-related news</p>
-                    <br/>
+                    <p>Join our <a href="waitlist.php">waitlist</a> to receive weekly research on new freelancing opportunities and other gig-related news.</p>
                     <p>Learn which platforms you can use to start earning income:</p>
                     <div id="skills">
                         <input id="COVID-19" type="checkbox" value="COVID-19"/> COVID-19 Filter*
