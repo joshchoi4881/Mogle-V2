@@ -189,8 +189,7 @@ input:checked + .slider:before {
   height: auto;
 }
 .analytics {
-  width: 400px;
-  height: 600px;
+  justify-content: center;
 }
 
 /* Schedule */
