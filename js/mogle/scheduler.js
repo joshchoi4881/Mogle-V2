@@ -15,7 +15,7 @@ function clear() {
 function getEstimate(platform, start_date, end_date, action) {
     axios({
         method: "POST",
-        url: ':5000/get_estimate',
+        url: 'https://www.mogleapp.com:5000/get_estimate',
         headers: {
             'Content-type': 'application/json'
         },
