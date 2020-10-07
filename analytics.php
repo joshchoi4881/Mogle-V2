@@ -39,22 +39,22 @@
         <section class="center">
             <div class="card">
                 <h1>Analytics</h1>
-                <p>Join our <a href="waitlist.php">waitlist</a> to receive tailored analytics for your platform(s) and city.</p>
+                <p>Join our <a href="waitlist.php">waitlist</a> to request tailored analytics for your platform(s) and city.</p>
             </div>
             <div class="card">
                 <h1>DoorDash (Kenosha, WI)</h1>
                 <br/>
                 <p>Delivery Breakdown Stats:</p>
                 <br/>
-                <img src="photos/analytics/Kenosha;WI/1.png"></img>
+                <img class="analytics" src="photos/analytics/Kenosha;WI/1.png"></img>
                 <br/>
                 <p>Deliveries Per Hour (DPH) and Total Earnings Per Hour (TEPH):</p>
                 <br/>
-                <img src="photos/analytics/Kenosha;WI/2.png"></img>
+                <img class="analytics" src="photos/analytics/Kenosha;WI/2.png"></img>
                 <br/>
                 <p>Weekly Averages:</p>
                 <br/>
-                <img src="photos/analytics/Kenosha;WI/3.png"></img>
+                <img class="analytics" src="photos/analytics/Kenosha;WI/3.png"></img>
                 <br/>
             </div>
             <div class="card">
@@ -62,15 +62,15 @@
                 <br/>
                 <p>Delivery Breakdown Stats:</p>
                 <br/>
-                <img src="photos/analytics/Hackensack;NJ/1.png"></img>
+                <img class="analytics" src="photos/analytics/Hackensack;NJ/1.png"></img>
                 <br/>
                 <p>Deliveries Per Hour (DPH) and Total Earnings Per Hour (TEPH):</p>
                 <br/>
-                <img src="photos/analytics/Hackensack;NJ/2.png"></img>
+                <img class="analytics" src="photos/analytics/Hackensack;NJ/2.png"></img>
                 <br/>
                 <p>Weekly Averages:</p>
                 <br/>
-                <img src="photos/analytics/Hackensack;NJ/3.png"></img>
+                <img class="analytics" src="photos/analytics/Hackensack;NJ/3.png"></img>
                 <br/>
             </div>
 		</section>

@@ -4,6 +4,7 @@
     $dotenv = Dotenv\Dotenv::createImmutable(__DIR__, "../../.env");
     $dotenv->load();
     $url = "http://".$_ENV["SERVER_IP"].":".$flaskPort."/get_estimates";
+    echo $url;
     $location = $_POST["location"];
     $platform = $_POST["platform"];
     $start_date = $_POST["start_date"];
