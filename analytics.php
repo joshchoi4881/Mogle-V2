@@ -37,14 +37,9 @@
             </nav>
         </header>
         <section class="center">
-            <h1>Analytics</h1>
-            <!-- Waitlist -->
             <div class="card">
-                <h1>Waitlist</h1>
+                <h1>Analytics</h1>
                 <p>Join our <a href="waitlist.php">waitlist</a> to receive tailored analytics for your platform(s) and city</p>
-            </div>
-            <!-- Analytics -->
-            <div class="card">
                 <h3>DoorDash (Kenosha, WI)</h3>
                 <p>Delivery Breakdown Stats:</p>
                 <img src="photos/analytics/Kenosha;WI/1.png"></img>

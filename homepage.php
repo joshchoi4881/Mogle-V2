@@ -37,6 +37,9 @@
             </nav>
         </header>
         <section class="center">
+            <br/>
+            <h1>About</h1>
+            <br/>
             <p>Mogle is a suite of tools designed to help gig economy workers manage and optimize
             their multiple sources of income.</p>
             <div class="card">

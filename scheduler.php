@@ -39,14 +39,9 @@
             </nav>
         </header>
         <section class="center">
-            <h1>Scheduler</h1>
-            <!-- Waitlist -->
             <div class="card">
-                <h1>Waitlist</h1>
+                <h1>Scheduler</h1>
                 <p>Join our <a href="waitlist.php">waitlist</a> to receive tailored analytics for your platform(s) and city</p>
-            </div>
-            <!-- Scheduler -->
-            <div class="card">
                 <p>Fill out your schedule below to estimate earnings</p>
                 <p>Location:</p>
                 <select id="location">
