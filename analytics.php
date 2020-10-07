@@ -41,20 +41,26 @@
                 <h1>Analytics</h1>
                 <p>Join our <a href="waitlist.php">waitlist</a> to request tailored analytics for your platform(s) and city.</p>
             </div>
-            <div class="card center">
+            <div class="card">
                 <h1>DoorDash (Kenosha, WI)</h1>
                 <br/>
                 <p>Delivery Breakdown Stats:</p>
                 <br/>
-                <img class="analytics" style="width:80%;height:80%;" src="photos/analytics/Kenosha;WI/1.png"></img>
+                <div class="center">
+                    <img class="analytics" style="width:80%;height:80%;" src="photos/analytics/Kenosha;WI/1.png"></img>
+                </div>
                 <br/>
                 <p>Deliveries Per Hour (DPH) and Total Earnings Per Hour (TEPH):</p>
                 <br/>
-                <img class="analytics" style="width:50%;height:50%;" src="photos/analytics/Kenosha;WI/2.png"></img>
+                <div class="center">
+                    <img class="analytics" style="width:50%;height:50%;" src="photos/analytics/Kenosha;WI/2.png"></img>
+                </div>
                 <br/>
                 <p>Weekly Averages:</p>
                 <br/>
-                <img class="analytics" style="width:75%;height:75%;" src="photos/analytics/Kenosha;WI/3.png"></img>
+                <div class="center">
+                    <img class="analytics" style="width:75%;height:75%;" src="photos/analytics/Kenosha;WI/3.png"></img>
+                </div>
                 <br/>
             </div>
             <div class="card center">
@@ -62,15 +68,21 @@
                 <br/>
                 <p>Delivery Breakdown Stats:</p>
                 <br/>
-                <img class="analytics" style="width:80%;height:80%;" src="photos/analytics/Hackensack;NJ/1.png"></img>
+                <div class="center">
+                    <img class="analytics" style="width:80%;height:80%;" src="photos/analytics/Hackensack;NJ/1.png"></img>
+                </div>
                 <br/>
                 <p>Deliveries Per Hour (DPH) and Total Earnings Per Hour (TEPH):</p>
                 <br/>
-                <img class="analytics" style="width:50%;height:50%;" src="photos/analytics/Hackensack;NJ/2.png"></img>
+                <div class="center">
+                    <img class="analytics" style="width:50%;height:50%;" src="photos/analytics/Hackensack;NJ/2.png"></img>
+                </div>
                 <br/>
                 <p>Weekly Averages:</p>
                 <br/>
-                <img class="analytics" style="width:75%;height:75%;" src="photos/analytics/Hackensack;NJ/3.png"></img>
+                <div class="center">
+                    <img class="analytics" style="width:75%;height:75%;" src="photos/analytics/Hackensack;NJ/3.png"></img>
+                </div>
                 <br/>
             </div>
 		</section>
