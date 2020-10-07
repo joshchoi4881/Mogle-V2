@@ -15,8 +15,10 @@ function clear() {
 function getEstimate(platform, start_date, end_date, action) {
     axios({
         method: "POST",
-        url: "/get_estimate",
-        port: "5000",
+        url: ':5000/get_estimate',
+        headers: {
+            'Content-type': 'application/json'
+        },
         data: {
             location: $("#location").val(),
             platform: platform,
