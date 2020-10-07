@@ -179,11 +179,11 @@ from flask import Flask, jsonify, request
 from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
-cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
+cors = CORS(app, resources={ r"/get_estimate": { "origins": "https://www.mogleapp.com/mogle/schduler.php" } })
 
 @app.route("/get_estimate", methods=["POST"])
-@cross_origin()
+@cross_origin(origin='https://www.mogleapp.com/mogle/scheduler.php', headers=['Content-Type', 'Authorization'])
 def get_estimate():
     body = request.get_json()
     loc = body["location"]
