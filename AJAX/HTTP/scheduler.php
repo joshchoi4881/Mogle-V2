@@ -11,7 +11,7 @@
     $end_date = $_POST["end_date"];
     $data = array("location" => $location, "platform" => $platform, "start_date"=>$start_date, "end_date"=>$end_date);
     echo $data;
-    #    $CURL = curl_init();
+#    $CURL = curl_init();
 #    curl_setopt($CURL, CURLOPT_URL, $url);
 #    curl_setopt($CURL, CURLOPT_POST, true);
 #    curl_setopt($CURL, CURLOPT_POSTFIELDS, http_build_query($data));
