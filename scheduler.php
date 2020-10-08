@@ -41,8 +41,8 @@
         <section class="center">
             <div class="card">
                 <h1>Scheduler</h1>
-                <p>Join our <a href="waitlist.php">waitlist</a> to request earnings predictions for your platform(s) and city</p>
-                <p>Fill out your schedule below to estimate earnings</p>
+                <p>Join our <a href="waitlist.php">waitlist</a> to request earnings predictions for your platform(s) and city.</p>
+                <p>Fill out your schedule below to estimate earnings.</p>
                 <p>Location:</p>
                 <select id="location">
                     <option value="Kenosha;WI">Kenosha, WI</option>

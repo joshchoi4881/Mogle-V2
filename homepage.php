@@ -44,7 +44,7 @@
             </div>
             <div class="card">
                 <h3>Step 1: <a href="questionnaire.php">Questionnaire</a> / <a href="search.php">Search</a></h3>
-                <p>Find out different ways you can make money by inputting your specific and unique set
+                <p>Find out different ways you can freelance by inputting your specific and unique set
                 of skills. Mogle will match you to some of the 150+ gig economy platforms out there, ranging
                 from Zeel for massage therapists to Fiverr for music teachers.</p>
             </div>

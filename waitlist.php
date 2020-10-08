@@ -39,7 +39,7 @@
         <section class="center">
             <div class="card">
                 <h1>Waitlist</h1>
-                <p>Enter your email to join our waitlist</p>
+                <p>Enter your email to join our waitlist.</p>
                 <input id="email" type="email"/>
                 <br/>
                 <p>Which features would you like to be on the waitlist for?</p>
