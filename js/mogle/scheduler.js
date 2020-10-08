@@ -17,27 +17,22 @@ function mobile(x) {
         $("#saturday").html("Sunday");
     }
 }
-var x = window.matchMedia("(max-width: 700px)")
-mobile(x) // Call listener function at run time
-x.addListener(mobile) 
+var x = window.matchMedia("(max-width: 700px)");
+mobile(x); // Call listener function at run time
+x.addListener(mobile);
 let hours = 0;
 let earnings = 0;
-let variance = 0;
-let premium = 0;
 let color = "table-danger";
 let button = "#DoorDash";
 function clear() {
     hours = 0;
     earnings = 0;
-    variance = 0;
-    premium = 0;
     const clicked = $(".clicked");
     clicked.removeClass();
     clicked.addClass("block cell");
     clicked.html("");
     $("#hours").html(hours + " hours");
     $("#earnings").html("$" + earnings);
-    $("#premium").html("$" + premium);
 }
 function getEstimate(platform, start_date, end_date, action) {
     $.ajax({
@@ -53,17 +48,15 @@ function getEstimate(platform, start_date, end_date, action) {
             start_date: start_date,
             end_date: end_date
         },
+        timeout: 0
     }).then((response) => {
         response = JSON.parse(response);
-        console.log("Response: ", response);
         if(action == "a") {
             let wage = $("#earnings").html();
             wage = parseFloat(wage.substring(1));
             let estimate = response.estimate;
             let total = (wage + estimate).toFixed(2);
             $("#earnings").html("$" + total);
-            variance += response.test_variance;
-            getPremium(total, variance);
         }
         else if(action == "r") {
             let wage = $("#earnings").html();
@@ -71,31 +64,6 @@ function getEstimate(platform, start_date, end_date, action) {
             let estimate = response.estimate;
             let total = (wage - estimate).toFixed(2);
             $("#earnings").html("$" + total);
-            variance -= response.test_variance;
-            getPremium(total, variance);
-        }
-    });
-}
-function getPremium(total, variance) {
-    $.ajax({
-        method: "POST",
-        url: "AJAX/HTTP/get_premium.php",
-        /*
-        baseURL: "http://localhost:5000",
-        url: "/get_premium",
-        */
-        data: {
-            total: total,
-            variance: variance
-        },
-    }).then((response) => {
-        response = JSON.parse(response);
-        console.log("Response: ", response);
-        let premium = response.premium;
-        if(premium == undefined) {
-            $("#premium").html("$" + 0);
-        } else {
-            $("#premium").html("$" + premium);
         }
     });
 }
@@ -174,7 +142,6 @@ $(function() {
     });
     $("#hours").html(hours + " hours");
     $("#earnings").html("$" + earnings);
-    $("#premium").html("$" + premium);
     $("#UberX").click(function() {
         color = "table-primary";
         button = "#UberX";
@@ -267,8 +234,6 @@ $(function() {
             }
             cellEnd += num + ":00Z";
         }
-        console.log(cellStart);
-        console.log(cellEnd);
         $(this).toggleClass("clicked");
         if($(this).hasClass("clicked")) {
             if($(button).text() == "UberX") {
