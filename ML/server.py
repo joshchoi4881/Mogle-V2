@@ -179,8 +179,8 @@ from flask import Flask, jsonify, request
 from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
-cors = CORS(app, resources={r"/*": {"origins": "*"}})
 app.config["CORS_HEADERS"] = "Content-Type"
+cors = CORS(app, resources={r"/*": {"origins": "*"}})
 
 @app.route("/get_estimate", methods=["POST"])
 @cross_origin()
