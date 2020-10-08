@@ -185,7 +185,9 @@ app.config["CORS_HEADERS"] = "Content-Type"
 @app.route("/get_estimate", methods=["POST"])
 @cross_origin()
 def get_estimate():
+    print("REQUEST", request)
     body = request.get_json()
+    print("BODY", body)
     loc = body["location"]
     platform = body["platform"]
     start_date = body["start_date"]
@@ -251,6 +253,8 @@ def get_premium():
         std = math.sqrt(variance)
     base = norm(loc=total, scale=std)
     premium = round(base.expect(lambda x: abs(x - total), lb=0, ub=total), 2)
+    if math.isnan(premium):
+        premium = 0
     return jsonify({ "premium": premium })
 
 if __name__ == "__main__":

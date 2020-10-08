@@ -13,42 +13,35 @@ function clear() {
     $("#earnings").html("$" + earnings);
 }
 function getEstimate(platform, start_date, end_date, action) {
-    axios({
+    $.ajax({
         method: "POST",
-        baseURL: "http://3.80.209.202:5000",
+        url: "/mogle/AJAX/HTTP/get_estimate.php",
+        /*
+        baseURL: "http://localhost:5000",
         url: "/get_estimate",
-        headers: {
-            'Content-type': 'application/json'
-        },
+        */
         data: {
             location: $("#location").val(),
             platform: platform,
             start_date: start_date,
             end_date: end_date
         },
-        headers: {
-            "accept": "application/json"
-        }
     }).then((response) => {
+        response = JSON.parse(response);
         console.log("Response: ", response);
-        if(200 === response.status) {
-            console.log(response.data);
-            if(action == "a") {
-                let wage = $("#earnings").html();
-                wage = parseFloat(wage.substring(1));
-                let estimate = response.data.estimate;
-                let total = (wage + estimate).toFixed(2);
-                $("#earnings").html("$" + total);
-            }
-            else if(action == "r") {
-                let wage = $("#earnings").html();
-                wage = parseFloat(wage.substring(1));
-                let estimate = response.data.estimate;
-                let total = (wage - estimate).toFixed(2);
-                $("#earnings").html("$" + total);
-            }
-        } else {
-            console.log(response.error);
+        if(action == "a") {
+            let wage = $("#earnings").html();
+            wage = parseFloat(wage.substring(1));
+            let estimate = response.estimate;
+            let total = (wage + estimate).toFixed(2);
+            $("#earnings").html("$" + total);
+        }
+        else if(action == "r") {
+            let wage = $("#earnings").html();
+            wage = parseFloat(wage.substring(1));
+            let estimate = response.estimate;
+            let total = (wage - estimate).toFixed(2);
+            $("#earnings").html("$" + total);
         }
     });
 }
