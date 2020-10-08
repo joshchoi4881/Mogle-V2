@@ -95,7 +95,6 @@
                 </tr>
                 <script>
                     let date = new Date();
-                    console.log(date);
 
                     const month_names = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
                     const current_month = month_names[date.getMonth()];
@@ -108,11 +107,9 @@
                     + date.getHours() + ":"
                     + date.getMinutes() + "Z";
                     let first = date.getDate() - date.getDay();
-                    console.log("First: ", first);
                     
                     // Sunday
                     let sunday = new Date(date.setDate(first));
-                    console.log(sunday);
                     const sunday_month = month_names[sunday.getMonth()].substring(0, 3);
                     const sunday_day = sunday.getDate();
                     const sunday_year = sunday.getFullYear();
@@ -121,7 +118,6 @@
                     // Monday
                     date = new Date();
                     let monday = new Date(date.setDate(first + 1));
-                    console.log(monday);
                     const monday_month = month_names[monday.getMonth()].substring(0, 3);
                     const monday_day = monday.getDate();
                     const monday_year = monday.getFullYear();
@@ -130,7 +126,6 @@
                     // Tuesday
                     date = new Date();
                     let tuesday = new Date(date.setDate(first + 2));
-                    console.log(tuesday);
                     const tuesday_month = month_names[tuesday.getMonth()].substring(0, 3);
                     const tuesday_day = tuesday.getDate();
                     const tuesday_year = tuesday.getFullYear();
@@ -139,7 +134,6 @@
                     // Wednesday
                     date = new Date();
                     let wednesday = new Date(date.setDate(first + 3));
-                    console.log(wednesday);
                     const wednesday_month = month_names[wednesday.getMonth()].substring(0, 3);
                     const wednesday_day = wednesday.getDate();
                     const wednesday_year = wednesday.getFullYear();
@@ -148,7 +142,6 @@
                     // Thursday
                     date = new Date();
                     let thursday = new Date(date.setDate(first + 4));
-                    console.log(thursday);
                     const thursday_month = month_names[thursday.getMonth()].substring(0, 3);
                     const thursday_day = thursday.getDate();
                     const thursday_year = thursday.getFullYear();
@@ -157,7 +150,6 @@
                     // Friday
                     date = new Date();
                     let friday = new Date(date.setDate(first + 5));
-                    console.log(friday);
                     const friday_month = month_names[friday.getMonth()].substring(0, 3);
                     const friday_day = friday.getDate();
                     const friday_year = friday.getFullYear();
@@ -166,7 +158,6 @@
                     // Saturday
                     date = new Date();
                     let saturday = new Date(date.setDate(first + 6));
-                    console.log(saturday);
                     const saturday_month = month_names[saturday.getMonth()].substring(0, 3);
                     const saturday_day = saturday.getDate();
                     const saturday_year = saturday.getFullYear();
