@@ -37,8 +37,8 @@ a > #logo {
 }
 #logo {
   margin: auto;
-  height: 150px;
-  width: 75px;
+  width: 150px;
+  height: 75px;
 }
 #info {
   margin-right: auto;
