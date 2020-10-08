@@ -16,8 +16,6 @@
     $other = "";
     $city = $location[0];
     $state = $location[1];
-    print_r($features);
-    print_r($platforms);
     if($features[0] == "true") {
         $newsletter = 1;
     }
