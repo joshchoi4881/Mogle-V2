@@ -43,7 +43,9 @@
     if($platforms[5] == "true") {
         $Grubhub = 1;
     }
-    if($other == "") {
+    if($platforms[6] != "") {
+        $other = $platforms[6];
+    } else {
         $other = "None";
     }
     if(!Database::query("SELECT email FROM waitlist WHERE email=:email", array(":email"=>$email))) {
