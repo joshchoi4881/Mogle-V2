@@ -1,13 +1,13 @@
 <?php
-    require "../../vendor/autoload.php";
-    require "../../config.php";
-    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__, "../../.env");
-    $dotenv->load();
-    $location = $_POST["location"];
-    $platform = $_POST["platform"];
-    $start_date = $_POST["start_date"];
-    $end_date = $_POST["end_date"];
     echo "TEST";
+#    require "../../vendor/autoload.php";
+#    require "../../config.php";
+#    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__, "../../.env");
+#    $dotenv->load();
+#    $location = $_POST["location"];
+#    $platform = $_POST["platform"];
+#    $start_date = $_POST["start_date"];
+#    $end_date = $_POST["end_date"];
 #    $url = "http://".$_ENV["SERVER_IP"].":".$flaskPort."/get_estimate";
 #    $data = json_encode(array("location"=>$location, "platform"=>$platform, "start_date"=>$start_date, "end_date"=>$end_date));
 #    $CURL = curl_init();

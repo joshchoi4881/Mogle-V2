@@ -28,10 +28,10 @@ function getEstimate(platform, start_date, end_date, action) {
         },
         timeout: 0,
         success: (data) => {
-          console.log(data);
+          console.log("SUCCESS", data);
         },
         error: (xhr, status, error) => {
-          console.log(xhr.responseText);
+          console.log("ERROR", xhr.responseText);
         }
     }).then((response) => {
         response = JSON.parse(response);
