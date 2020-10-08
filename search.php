@@ -40,6 +40,16 @@
                 min-width: 700px;
                 height: auto;
             }
+            @media screen and (max-width: 700px) {
+                .expand {
+                    margin: 10px;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                    border-radius: 50px;
+                    width: auto;
+                    min-width: 400px;
+                    height: auto;
+                }
+            }
         </style>
         <!-- Bootstrap -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
