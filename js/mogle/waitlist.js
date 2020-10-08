@@ -29,7 +29,7 @@ function saveEmail() {
     } else {
         $("#response").html("Successfully added to the waitlist");
         $.ajax({
-            url: "/mogle/AJAX/waitlist.php",
+            url: "AJAX/waitlist.php",
             method: "POST",
             data: {
                 email: email,
