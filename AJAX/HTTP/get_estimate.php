@@ -1,9 +1,9 @@
 <?php
+    require "../../vendor/autoload.php";
+    require "../../config.php";
+    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__, "../../.env");
+    $dotenv->load();
     echo "TEST";
-#    require "../../vendor/autoload.php";
-#    require "../../config.php";
-#    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__, "../../.env");
-#    $dotenv->load();
 #    $location = $_POST["location"];
 #    $platform = $_POST["platform"];
 #    $start_date = $_POST["start_date"];
