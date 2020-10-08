@@ -15,7 +15,7 @@ function clear() {
 function getEstimate(platform, start_date, end_date, action) {
     $.ajax({
         method: "POST",
-        url: "/mogle/AJAX/HTTP/get_estimate.php",
+        url: "AJAX/HTTP/get_estimate.php",
         /*
         baseURL: "http://localhost:5000",
         url: "/get_estimate",

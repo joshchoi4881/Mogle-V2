@@ -71,6 +71,7 @@
                 <br/>
                 <p id="hours"></p>
                 <p>Earnings: <span id="earnings"></span></p>
+                <br/>
                 <table>
                 <tr>
                     <th class="block"></th>
